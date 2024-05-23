@@ -9,6 +9,7 @@ tasks:
   - name: Run LocalStack
     command: |
       localstack start
+    openMode: split-right
   - name: Deploy the app
     command: |
       echo "Deploying Serverless app to local environment"
