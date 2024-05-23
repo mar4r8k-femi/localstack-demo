@@ -1,5 +1,5 @@
 # Use the base Gitpod image
-FROM gitpod/workspace-full:latest
+FROM gitpod/workspace-full
 
 # Install required dependencies
 RUN sudo apt-get update && sudo apt-get install -y \
