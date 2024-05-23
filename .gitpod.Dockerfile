@@ -1,12 +1,12 @@
 # Use the base Gitpod image
-FROM gitpod/workspace-full
+FROM gitpod/workspace-full:latest
 
 # Install required dependencies
-RUN apt-get update && apt-get install -y \
+RUN sudo apt-get update && sudo apt-get install -y \
     python3 \
     python3-pip \
     jq \
-    && rm -rf /var/lib/apt/lists/*
+    && sudo rm -rf /var/lib/apt/lists/*
 
 # Install LocalStack and awscli-local
 RUN pip3 install localstack awscli-local flake8
