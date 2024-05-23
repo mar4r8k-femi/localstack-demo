@@ -6,6 +6,8 @@ tasks:
       npm install
       which serverless || npm install -g serverless
       which localstack || pip install localstack
+  - name: Run LocalStack
+    command: |
       localstack start
   - name: Deploy the app
     command: |
